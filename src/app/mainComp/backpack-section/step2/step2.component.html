@@ -1,0 +1,19 @@
+<ng-template #cardStep2>
+    <div class="card-info-container" *ngFor="let country of countries; index as i" (click) = "getCurrentCountry(i)"
+    [ngClass] = "{selected: (alreadySelected.userSelection!.location!.name === country.name && initSelected)  || clickedIndex === i}">
+      <div class="card-layout">
+        <div class="img-container">
+          <img src="{{country.iconUrl}}" width="80px">
+       </div>
+        <p >{{country.name}}</p>
+      </div>
+     </div>
+  </ng-template>
+  
+  <app-card 
+    [cardModel] = "cardStep2"
+    (stepCards) = "getStepTemplate($event)">
+  </app-card>
+
+
+

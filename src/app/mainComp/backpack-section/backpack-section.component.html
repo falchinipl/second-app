@@ -1,0 +1,34 @@
+
+<div class="number">
+    <div class="progress-bar"></div>
+    <div class="progress-count"></div>
+    <span class="progress-text">step {{count + 1}} out of 4</span>
+</div>
+<div #cardContainer>
+    <step1 *ngIf="count === 0" 
+    [prizes] = "prizes"
+    [alreadySelected] = "backpackData"
+    (emitSelected) = "isSelected($event)" 
+    (emitSelectedPrize) = "getPrize($event)"
+    (getAllCards) = "setAnimationElements($event)"
+    ></step1>
+    <step2 *ngIf="count === 1"
+    [countries] = "countries"
+    [alreadySelected] = "backpackData"
+    (emitSelected) = "isSelected($event)"
+    (emitSelectedCountry) = getCountry($event)
+    (getAllCards) = "setAnimationElements($event)"
+      ></step2>
+    <step3 *ngIf="count === 2"
+    [alreadySelected] = "backpackData"
+    (emitSelected) = "isSelected($event)"
+    (emitSelectedOffice) = "getOffice($event)"
+    [location] = "country"
+    (getAllCards) = "setAnimationElements($event)"
+       ></step3>
+    <step4 *ngIf="count === 3"
+    [count] = "count"
+    [backpack] = "prize"
+    [ufficio] = "office"></step4>
+    <button *ngIf="count !== 3" (click) = "goToStep(); setProgressBar()" [disabled]="!selected">next</button>
+</div>

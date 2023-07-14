@@ -1,0 +1,17 @@
+<ng-template #cardStep3>
+    <div class="card-info-container" *ngFor="let office of offices; index as i" (click) = "getCurrentOffice(i)"
+    [ngClass] = "{selected: (alreadySelectedOffice?.office === office?.office && initSelected)  || clickedIndex === i}">
+      <div class="card-layout">
+
+        <fa-icon icon="building"></fa-icon>
+        <p >{{office.office}}</p>
+      </div>
+     </div>
+  </ng-template>
+
+<app-card 
+[cardModel] ="cardStep3"
+(stepCards) = "getStepTemplate($event)"
+>
+</app-card>
+

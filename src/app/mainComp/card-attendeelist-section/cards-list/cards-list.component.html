@@ -1,0 +1,43 @@
+<ng-template #AttendeeListformTemplate >
+  <div class="form-control" >
+    <input  type="text"  [formControl]="nome" name="name">Nome
+  </div>
+  <div class="form-control" >
+    <input  type="text" [formControl]="cognome"  name="surname">Cognome
+  </div>
+  <div class="form-control" >
+    <input  type="text"  [formControl]="soprannome"  name="nickname">Soprannome
+  </div>
+  <div class="form-control" >
+    <input  type="text"  [formControl]="punti"  name="nickname">Punti
+  </div>
+<button>submit</button>
+
+</ng-template>
+<ng-template #cardAttendeeList>
+  <div class="card-info-container" *ngFor="let profile of profiles; index as i" (click) = "getCurrentProfile(i)">
+    <div class="card-layout">
+    <div class="card-info" *ngIf ="profile.name && profile.surname">
+      <p class="p-name">{{profile.name}}</p>
+      <p class="p-surname">{{profile.surname}}</p>
+      <p class="p-nick">@{{profile.nickname}}</p>
+    </div>
+    <div class="card-info" *ngIf ="!profile.name || !profile.surname">
+      <p class="p-nick">@{{profile.nickname}}</p>
+    </div>
+      <p *ngIf="profile.points" class="p-nick">{{profile.points}}</p>
+    </div>
+    </div>
+</ng-template>
+
+<app-card 
+  [cardModel] = "cardAttendeeList">
+</app-card>
+
+<add-user-form
+  [formTemplate] = "AttendeeListformTemplate"
+  [formGroup] = "group"
+  (formModelEmitter) = "setFormModel($event)"
+>
+</add-user-form>
+

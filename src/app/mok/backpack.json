@@ -1,0 +1,126 @@
+{ "prizeType": "backpack", 
+  "label": "Order now your Reply Backpack! Choose the backpack model", 
+  "errorMessage": "Your order is not confirmed, please try again to order your backpack. If the issue keeps happening please write to <br/><a href='mailto:eventsapp@reply.com' mailto>eventsapp@reply.com</a>", 
+  "prizes": [ 
+    { "prizeId": 6, 
+      "prizeType": "backpack", 
+      "label": "Blue", 
+      "imgUrl": "https://media.istockphoto.com/photos/bilbo-baggins-picture-id459017449?s=612x612", 
+      "capacity": 3 
+      },
+      { "prizeId": 15, 
+      "prizeType": "backpack", 
+      "label": "Red", 
+      "imgUrl": "https://media.istockphoto.com/photos/bilbo-baggins-picture-id459017449?s=612x612", 
+      "capacity": 5
+      },{ "prizeId": 16, 
+      "prizeType": "backpack", 
+      "label": "Yellow", 
+      "imgUrl": "https://media.istockphoto.com/photos/bilbo-baggins-picture-id459017449?s=612x612", 
+      "capacity": 5
+      },{ "prizeId": 17, 
+      "prizeType": "backpack", 
+      "label": "Light Blue", 
+      "imgUrl": "https://media.istockphoto.com/photos/bilbo-baggins-picture-id459017449?s=612x612", 
+      "capacity": 0
+      } ], 
+  "locations": [ 
+        { 
+          "countries": [ 
+          { 
+            "name": "Italy", 
+            "iconUrl": "https://media.istockphoto.com/photos/bilbo-baggins-picture-id459017449?s=612x612",
+          "offices": [ 
+            { 
+            "priceLocationId": 3, 
+            "office": "Milan K1"
+            },
+            { 
+            "priceLocationId": 4, 
+            "office": "Milan K2"
+            }
+            
+          ] 
+            
+        },{ 
+          "name": "France", 
+          "iconUrl": "https://media.istockphoto.com/photos/bilbo-baggins-picture-id459017449?s=612x612",
+        "offices": [ 
+          { 
+          "priceLocationId": 5, 
+          "office": "Paris K1"
+          },
+          { 
+          "priceLocationId": 6, 
+          "office": "Paris K2"
+          }
+          
+        ] 
+          
+      },{ 
+        "name": "Belarus", 
+        "iconUrl": "https://media.istockphoto.com/photos/bilbo-baggins-picture-id459017449?s=612x612",
+      "offices": [ 
+        { 
+        "priceLocationId": 12, 
+        "office": "A K1"
+        },
+        { 
+        "priceLocationId": 13, 
+        "office": "A K2"
+        },
+        { 
+          "priceLocationId": 14, 
+          "office": "A K5"
+          },
+          { 
+          "priceLocationId": 15, 
+          "office": "A K7"
+          },
+          { 
+            "priceLocationId": 27, 
+            "office": "B C3"
+            },
+            { 
+            "priceLocationId": 28, 
+            "office": "B C4"
+            }
+        
+      ] 
+        
+    }
+            
+      ] 
+            
+    } 
+            
+    ], 
+    
+    "userSelection": { 
+      "prize": { 
+        "prizeId": 15, 
+      "prizeType": "backpack", 
+      "label": "Red", 
+      "imgUrl": "https://media.istockphoto.com/photos/bilbo-baggins-picture-id459017449?s=612x612", 
+      "capacity": 5
+      }, 
+        "location": { 
+          "countries": [ 
+            {
+            "name": "Italy", 
+        "offices": [ 
+          { 
+            "priceLocationId": 3, 
+            "office": "Milan K1"
+          }
+          
+        ] 
+      }
+                
+              ] 
+              
+              }
+                 
+            } 
+                
+          }

@@ -1,0 +1,29 @@
+<ng-template #cardStep4Backpack>
+  <div class="chosen"><span>backpack</span><span class="icon"><fa-icon icon="edit"></fa-icon></span></div>
+    <div class="card-info-container"  >
+        <div class="card-info image-layout">
+            <img src="{{prize.imgUrl}}">
+            <p >{{prize.label}}</p>
+          </div>
+     </div>
+  </ng-template>
+
+  <ng-template #cardStep4Office>
+    <div class="chosen"><span>office</span><span class="icon"><fa-icon icon="edit"></fa-icon></span></div>
+    <div class="card-info-container"  >
+        <div class="card-layout">
+            <i class="fa fa-light fa-city"></i>
+            <p >{{office.office}}</p>
+          </div>
+     </div>
+  </ng-template>
+<app-card
+[cardModel] = "cardStep4Backpack"
+>
+    
+</app-card>
+<app-card
+[cardModel] = "cardStep4Office"
+>
+</app-card>
+<button >back</button>

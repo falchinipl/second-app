@@ -1,0 +1,28 @@
+{
+    "page": 1,
+    "count": 3490,
+    "me": {
+      "position": 4,
+      "profileId": "527cbe97-b96c-453a-8035-7ec9c93b2d85",
+      "publicProfileId": "527cbe97-b96c-453a-8035-7ec9c93b2d85",
+      "name": "Manuela",
+      "surname": "Ceroni",
+      "nickname": "manu82",
+      "imageUrl": "https://assets.entegy.com.au/projects/ef81b942-220f-4945-94d0-f864263e5956/delegates/556f2a6f-b778-4c2e-aa74-fdc1691c8bd2.jpg",
+      "points": 560,
+      "profileType": "replyer"
+    },
+    "profiles": [
+      {
+        "position": 4,
+        "profileId": "527cbe97-b96c-453a-8035-7ec9c93b2d85",
+        "publicProfileId": "527cbe97-b96c-453a-8035-7ec9c93b2d85",
+        "name": "Manuela",
+        "surname": "Ceroni",
+        "nickname": "manu82",
+        "imageUrl": "https://assets.entegy.com.au/projects/ef81b942-220f-4945-94d0-f864263e5956/delegates/556f2a6f-b778-4c2e-aa74-fdc1691c8bd2.jpg",
+        "points": 560,
+        "profileType": "replyer"
+      }
+    ]
+  }

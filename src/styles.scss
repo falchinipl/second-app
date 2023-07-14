@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+.card-info-container{
+    margin-top: 8px;
+    background-color: #013D4A;
+    p{
+        margin:0
+    }
+    .card-layout{
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px;
+        .img-container{
+            margin-right: 20px;
+        }
+    }
+    .image-layout{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        p{
+            margin-top:15px;
+        }
+    }
+    
+}
+
+
+
+  
+
+

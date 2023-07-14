@@ -1,0 +1,16 @@
+<ng-template #cardStep1>
+  <div class="card-info-container col-md-6" *ngFor="let prize of prizes; index as i" (click) = "getCurrentPrize(i)"
+  [ngClass] = "{selected: (alreadySelected.userSelection!.prize!.prizeId === prize.prizeId && initSelected)  || clickedIndex === i}"
+  > 
+      <div class="card-info image-layout">
+        <img src="{{prize.imgUrl}}">
+        <p >{{prize.label}}</p>
+      </div>
+     </div>
+  </ng-template>
+  
+  <app-card 
+    [cardModel] = "cardStep1"
+    (stepCards) = "getStepTemplate($event)">
+  </app-card>
+
